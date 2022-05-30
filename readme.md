@@ -11,7 +11,7 @@ Discord modals **application bot** source code
 > ## How to setup?
 
 > ### Step 1
-> Download/for the code from [github](https://github.com/ee3devYT/application-bot-code)
+> Download/fork the code from [github](https://github.com/ee3devYT/application-bot-code)
 ![App Screenshot](https://cdn.discordapp.com/attachments/980086774158200872/980676823136485386/1653881963344.png)
 
 > ### Step 2
