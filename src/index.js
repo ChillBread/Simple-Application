@@ -7,7 +7,23 @@ const client = new Client({
  
 // BOT IS NOW ONLINE
 client.on('ready', async(members) => {
-    console.log(`Your application bot is ready`); // ready message
+    
+     // ready message
+     console.log('📝 | Starting your application bot. Please wait')
+    const P = ['Loading',  'Loading.', 'Loading..', 'Loading...'];
+let x = 0;
+const loader = setInterval(() => {
+  process.stdout.write(`\r${P[x++]}`);
+  x %= P.length;
+}, 250);
+console.log('--------------------------------------------------')
+setTimeout(() => {
+  clearInterval(loader, console.log('Done'));
+}, 5000)
+setTimeout(() => {
+    clearInterval(console.log('--------------------------------------------------'), console.log('✅ | Your Application bot is ready!'));
+  }, 5000)
+
 
     // BOT ACTIVITY
     client.user.setPresence({
